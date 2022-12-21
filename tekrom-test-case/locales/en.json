@@ -1,0 +1,11 @@
+{
+  "links": {
+    "home": "Home",
+    "product": "Products",
+    "en": "English",
+    "tr": "Turkish"
+  },
+  "login": {
+    "title": "Giriş Yap"
+  }
+}

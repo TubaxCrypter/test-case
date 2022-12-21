@@ -39,7 +39,7 @@
           <p  v-if="!editMode" class="text-gray-700 text-base">
             {{product.description}}
           </p>
-          <textarea v-if="editMode" v-model="product.description"  class="font-bold border-rose-200 border-4 border-indigo-500/100  text-xl mb-2"> {{product.description}}
+          <textarea v-if="editMode" v-model="product.description"  class="c font-bold border-rose-200 border-4 border-indigo-500/100  text-xl mb-2"> {{product.description}}
           </textarea>
           <span class="text-sm font-semibold">Price</span>
           &nbsp;
@@ -144,8 +144,8 @@ export default ({
 </script>
 
 <style scoped>
-.body{
-
+.c{
+background: transparent;
 }
 
 </style>
