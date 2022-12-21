@@ -1,5 +1,5 @@
 <template>
-  <div class="body">
+  <div class="  ">
     <div class="flex justify-center mb-4 sm:text-4xl">
       Product Management DashBoard
     </div>
@@ -83,7 +83,8 @@ authStore.nuxtServerInit
 
 
 definePageMeta({
-  middleware: "auth-check"
+  middleware: "auth-check",
+  layout: 'default',
 })
 export default ({
   name: 'home',

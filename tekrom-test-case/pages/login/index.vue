@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow-sm rounded w-96">
+  <div class="main bg-white shadow-sm rounded w-96">
     <div class="text-center text-gray-600 py-4 text-black-100 text-3xl">Admin Panel</div>
     <div class="flex justify-center mb-4">
       <div class="text">
@@ -57,6 +57,7 @@ export default ({
       }
       if (authStore.isLogin != null || authStore.isLogin != false){
         this.$router.push('/home')
+
       }
     }
   }
@@ -64,6 +65,6 @@ export default ({
 </script>
 <style scoped>
 .c{
-  background: transparent;
+ 
 }
 </style>
