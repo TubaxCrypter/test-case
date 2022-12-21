@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e0ae9bf-cf84-4a51-b1d9-ddbcc715d247" name="Changes" comment="" />
+    <list default="true" id="4e0ae9bf-cf84-4a51-b1d9-ddbcc715d247" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tekrom-test-case/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tekrom-test-case/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tekrom-test-case/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tekrom-test-case/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tekrom-test-case/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tekrom-test-case/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tekrom-test-case/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +34,9 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,11 +46,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671616007585</updated>
-      <workItem from="1671616010230" duration="328000" />
+      <workItem from="1671616010230" duration="589000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
