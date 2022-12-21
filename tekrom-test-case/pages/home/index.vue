@@ -17,9 +17,17 @@
         İleri
       </button>
 
+
     </div>
 
-
+    <div class="flex justify-center" >
+      <div>
+        <label class="block text-gray-700 text-sm font-bold mb-2">
+          Ürün Sayısı
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="limit" type="number" placeholder="Ürün Sayısı">
+      </div>
+    </div>
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="product in productData" :key="product.id">
         <img class="w-full" :src="product.images[0]" alt="Sunset in the mountains">
@@ -33,9 +41,17 @@
           &nbsp;<span class="font-bold text-xl">{{product.price}}</span>&nbsp;
           <span class="text-sm font-semibold">$</span>
         </div>
-        <div class="px-6 pt-4 pb-2">
+        <div class="px-6 pt-4 pb-2 mb-2">
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#:{{product.id}}</span>
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{product.category.name}}</span>
+          <div class="grid grid-cols-3 gap-2 justify-end align-middle">
+            <button class="bg-orange-500 block mx-auto text-white text-sm uppercase rounded shadow-md px-6 py-2 mt-2" >
+              Düzenle
+            </button>
+            <button class="bg-red-600 block mx-auto text-white text-sm uppercase rounded shadow-md px-6 py-2 mt-2" @click="removeProduct(product.id)" >
+              Sil
+            </button>
+          </div>
 
         </div>
       </div>
@@ -81,6 +97,13 @@ export default ({
       }
 
     },
+    removeProduct(id){
+      const objWithIdIndex = this.productData.findIndex((obj) => obj.id === id);
+      if (objWithIdIndex > -1) {
+        this.productData.splice(objWithIdIndex, 1);
+      }
+    console .log(id)
+    },
     nextProduct(){
       this.offset = parseInt(this.offset)  + 10
       this.getProducts()
@@ -93,7 +116,7 @@ export default ({
       this.getProducts()
     },
     async getProducts(){
-      var  data = await useFetch('https://api.escuelajs.co/api/v1/products/?offset='+ this.offset + '&limit='+ this.limit ).then((res) =>{
+        var  data = await useFetch('https://api.escuelajs.co/api/v1/products/?offset='+ this.offset + '&limit='+ this.limit ).then((res) =>{
         var response = res.data.value
         this.productData = response
         console.log(this.productData)
