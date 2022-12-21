@@ -30,7 +30,9 @@
 </template>
 
 <script>
+import { useAuthStore } from "~/stores/auth";
 
+const authStore = useAuthStore()
 
 definePageMeta({
   layout: 'login',
@@ -47,7 +49,15 @@ export default ({
   },
   methods:{
     login(){
-        console.log('ok')
+      authStore.login(this.user)
+      if (!authStore.isAuthenticated){
+        alert('k.adi : admin ' +
+            'şifre : admin')
+        return
+      }
+      if (authStore.isLogin != null || authStore.isLogin != false){
+        this.$router.push('/home')
+      }
     }
   }
 })
